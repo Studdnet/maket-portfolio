@@ -1,5 +1,57 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap&subset=cyrillic-ext");
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  font-display: swap;
+  src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"]:before,
+[class*=" _icon-"]:before {
+  display: block;
+}
+
+._icon-Facebook:before {
+  content: "\e900";
+}
+
+._icon-Insta:before {
+  content: "\e901";
+}
+
+._icon-Twitter:before {
+  content: "\e902";
+}
+
+._icon-Linkedin:before {
+  content: "\e903";
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -39,7 +91,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "";
+  font-family: "Heebo";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -48,7 +100,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "";
+  font-family: "Heebo";
 }
 
 input::-ms-clear {
@@ -93,11 +145,7 @@ h6 {
 
 body {
   color: #000;
-  font-size: 20px;
-  line-height: 150%;
-  background-color: #fff;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: black;
+  font-size: 14px;
 }
 
 body._lock {
@@ -118,7 +166,7 @@ body._lock {
 }
 
 ._container {
-  max-width: 1170px;
+  max-width: 856px;
   margin: 0 auto;
 }
 
@@ -2894,6 +2942,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: url("../img/icons/close.svg") 0 0 no-repeat;
 }
 
+.header__content {
+  max-width: 1032px;
+}
+
 /*
 //Burger
 .icon-menu {
@@ -2965,12 +3017,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 }
 
-@media (max-width: 1182px) {
-  ._container {
-    max-width: 970px;
-  }
-}
-
 @media (max-width: 991.98px) {
   ._container {
     max-width: 750px;
@@ -2982,6 +3028,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .select__options {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 868px) {
+  ._container {
+    max-width: 970px;
   }
 }
 

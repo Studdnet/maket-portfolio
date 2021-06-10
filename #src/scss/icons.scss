@@ -25,7 +25,15 @@
 	}
 }
 
-._icon-f:before { content: "\EA01"; }
-._icon-feather_edit:before { content: "\EA02"; }
-._icon-Group 18:before { content: "\EA03"; }
-._icon-Group 70:before { content: "\EA04"; }
+._icon-Facebook:before {
+	content: "\e900";
+ }
+ ._icon-Insta:before {
+	content: "\e901";
+ }
+ ._icon-Twitter:before {
+	content: "\e902";
+ }
+ ._icon-Linkedin:before {
+	content: "\e903";
+ }
