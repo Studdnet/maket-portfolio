@@ -2970,6 +2970,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: url("../img/icons/close.svg") 0 0 no-repeat;
 }
 
+.header {
+  position: relative;
+  z-index: 100;
+}
+
 .header__content {
   max-width: 1052px;
   padding: 0 10px;
@@ -3024,10 +3029,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .hello__content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 0px 110px 0px 0px;
+  padding: 18px 110px 0px 0px;
 }
 
 .hello__content *:last-child {
@@ -3077,6 +3085,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .menu__list li {
     margin: 0px 33px 0px 0px;
+  }
+}
+
+@media (min-width: 868px) {
+  .hello__content {
+    padding: 18px 50px 0px 0px;
   }
 }
 
@@ -3155,9 +3169,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   ._container {
     max-width: 750px;
   }
+
+  .hello {
+    padding: 0px 0px 70px 0px;
+  }
+
+  .page {
+    padding: 30px 0px 0px 0px;
+  }
 }
 
 @media (max-width: 767.98px) {
+  .title {
+    font-size: 32px;
+  }
+
   .header__menu {
     height: 50px;
   }
@@ -3178,7 +3204,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     left: 0;
     overflow: auto;
     padding: 80px 10px 30px 10px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
   }
 
   .menu__body._active {
@@ -3241,6 +3267,41 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
+  }
+
+  .hello {
+    padding: 0px 0px 60px 0px;
+  }
+
+  .hello_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hello__content {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .hello__title {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .hello__text {
+    padding: 0 15px;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .hello__btn {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .hello__avatar {
+    width: 170px;
+    height: 170px;
+    margin: 0px 0px 40px 0px;
   }
 }
 
