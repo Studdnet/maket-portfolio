@@ -576,6 +576,10 @@ textarea.input {
   line-height: 143.75%;
 }
 
+.title-posts {
+  font-size: 22px;
+}
+
 .row:after {
   display: block;
   content: "";
@@ -3069,6 +3073,80 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   max-width: 100%;
 }
 
+.recent-posts {
+  background: #EDF7FA;
+  padding: 25px 0px 30px 0px;
+}
+
+.recent-posts__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 20px 0px;
+}
+
+.recent-posts__title {
+  padding: 0px 20px 0px 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.recent-posts__view-all {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  font-size: 16px;
+  text-align: right;
+  line-height: 23px;
+  color: #00A8CC;
+}
+
+.recent-posts__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px -10px;
+}
+
+.recent-posts__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0px 10px;
+}
+
+.recent-post {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+          box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 20px;
+  height: 100%;
+}
+
+.recent-post__title {
+  display: inline-block;
+  color: inherit;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 146.15385%;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  margin: 0px 0px 17px 0px;
+}
+
+.recent-post__info {
+  margin: 0px 0px 15px 0px;
+  font-size: 18px;
+  line-height: 144.44444%;
+}
+
+.recent-post__info span {
+  margin: 0px 10px;
+}
+
 .page {
   padding: 90px 0 0 0;
   -webkit-box-flex: 1;
@@ -3163,6 +3241,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .menu__link:hover {
     color: #FF6464;
   }
+
+  .recent-post__title:hover {
+    color: #FF6464;
+  }
 }
 
 @media (max-width: 868px) {
@@ -3182,6 +3264,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (max-width: 767.98px) {
   .title {
     font-size: 32px;
+  }
+
+  .title-posts {
+    text-align: center;
+    font-size: 18px;
   }
 
   .header__menu {
@@ -3302,6 +3389,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width: 170px;
     height: 170px;
     margin: 0px 0px 40px 0px;
+  }
+
+  .recent-posts__view-all {
+    display: none;
   }
 }
 
