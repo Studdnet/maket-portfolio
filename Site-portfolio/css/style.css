@@ -3171,6 +3171,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin: 0px 33px 0px 0px;
   }
 
+  .menu__link:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    /*изменить на right:0;, чтобы изменить направление подчёркивания */
+    width: 0;
+    /*задаём длинну линии до наведения курсора*/
+    height: 2px;
+    /*задаём ширину линии*/
+    background-color: #FF6464;
+    /*задаём цвет линии*/
+    content: "";
+    -webkit-transition: width 0.3s ease-out;
+    -o-transition: width 0.3s ease-out;
+    transition: width 0.3s ease-out;
+    /*задаём время анимации*/
+  }
+
+  .menu__link:hover:after,
+  .menu__link:focus:after {
+    width: 100%;
+  }
+
+  .menu__link:hover {
+    color: #FF6464;
+  }
+
   .recent-posts__items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3225,33 +3252,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .select__options {
     font-size: 18px;
-  }
-
-  .menu__link:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    /*изменить на right:0;, чтобы изменить направление подчёркивания */
-    width: 0;
-    /*задаём длинну линии до наведения курсора*/
-    height: 2px;
-    /*задаём ширину линии*/
-    background-color: #FF6464;
-    /*задаём цвет линии*/
-    content: "";
-    -webkit-transition: width 0.3s ease-out;
-    -o-transition: width 0.3s ease-out;
-    transition: width 0.3s ease-out;
-    /*задаём время анимации*/
-  }
-
-  .menu__link:hover:after,
-  .menu__link:focus:after {
-    width: 100%;
-  }
-
-  .menu__link:hover {
-    color: #FF6464;
   }
 
   .recent-post__title:hover {
