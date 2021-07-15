@@ -1061,6 +1061,15 @@ body.ie ._ibg img {
   display: none;
 }
 
+.footer {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.footer__social {
+  margin: 0px 0px 26px 0px;
+}
+
 .hello {
   padding: 38px 0px 70px 0px;
 }
@@ -1201,30 +1210,29 @@ body.ie ._ibg img {
 }
 
 .works__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   border-bottom: 1px solid #E0E0E0;
   padding-bottom: 30px;
   margin: 0px 0px 30px 0px;
+}
+
+.works__item:last-child {
+  margin-bottom: 0px;
 }
 
 .works__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 246px;
           flex: 0 0 246px;
+  display: block;
   border-radius: 6px;
   min-height: 180px;
+  overflow: hidden;
 }
 
 .works__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 0px 0px 0px 18px;
 }
 
 .works__title {
@@ -1278,6 +1286,27 @@ body.ie ._ibg img {
           flex: 1 1 auto;
 }
 
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social__item {
+  margin: 0px 17px;
+  font-size: 30px;
+  color: inherit;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
 @media (min-width: 767.98px) {
   .menu__list {
     display: -webkit-box;
@@ -1320,6 +1349,23 @@ body.ie ._ibg img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .works__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .works__body {
+    padding: 0px 0px 0px 18px;
+  }
+
+  .social__item:hover {
+    color: #ff6464;
   }
 }
 
@@ -1533,5 +1579,32 @@ body.ie ._ibg img {
   .recent-post__info {
     font-size: 16px;
     margin: 0px 0px 10px 0px;
+  }
+
+  .featured-works {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .featured-works__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: auto;
+  }
+
+  .featured-works__items .works__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+            flex: 0 0 90%;
+    margin: 0px 15px 0px 0px;
+  }
+
+  .works__image {
+    padding: 0px 0px 60% 0px;
+    margin: 0px 0px 17 px 0px;
+  }
+
+  .works__title {
+    font-size: 24px;
   }
 }
