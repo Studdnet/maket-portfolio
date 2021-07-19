@@ -1057,6 +1057,10 @@ body.ie ._ibg img {
   line-height: 1.2;
 }
 
+.menu__link._active {
+  color: #FF6464;
+}
+
 .icon-menu {
   display: none;
 }
@@ -1209,6 +1213,18 @@ body.ie ._ibg img {
   margin: 0px 0px 20px 0px;
 }
 
+.works {
+  padding-bottom: 60px;
+}
+
+.works__items {
+  padding-bottom: 60px;
+}
+
+.works__main-title {
+  margin: 0px 0px 45px 0px;
+}
+
 .works__item {
   border-bottom: 1px solid #E0E0E0;
   padding-bottom: 30px;
@@ -1242,6 +1258,13 @@ body.ie ._ibg img {
   line-height: 146.66667%;
   color: inherit;
   margin: 0px 0px 15px 0px;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.works__title:hover {
+  color: #ff6464;
 }
 
 .works__info {
@@ -1277,6 +1300,56 @@ body.ie ._ibg img {
   font-size: 20px;
   color: #8695A4;
   margin: 0px 0px 0px 25px;
+}
+
+.blog {
+  padding-bottom: 50px;
+}
+
+.blog__title {
+  margin: 0px 0px 50px 0px;
+}
+
+.blog__article-name {
+  margin: 0px 0px 10px 0px;
+  display: inline-block;
+  color: inherit;
+  font-size: 30px;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+  line-height: 146.66667%;
+}
+
+.blog__article-name:hover {
+  color: #ff6464;
+}
+
+.blog__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
+}
+
+.blog__item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.blog__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  margin: 0px 0px 10px 0px;
+}
+
+.blog__separator {
+  margin: 0 15px;
+}
+
+.blog__category {
+  color: #8695A4;
 }
 
 .page {
@@ -1524,6 +1597,10 @@ body.ie ._ibg img {
     bottom: calc(50% - 1px);
   }
 
+  .footer {
+    padding: 30px 0px;
+  }
+
   .hello {
     padding: 0px 0px 60px 0px;
   }
@@ -1599,6 +1676,18 @@ body.ie ._ibg img {
     margin: 0px 15px 0px 0px;
   }
 
+  .works__items {
+    padding-bottom: 30px;
+  }
+
+  .works {
+    padding-bottom: 30px;
+  }
+
+  .works__main-title {
+    margin: 0px 0px 20px 0px;
+  }
+
   .works__image {
     padding: 0px 0px 60% 0px;
     margin: 0px 0px 17 px 0px;
@@ -1606,5 +1695,26 @@ body.ie ._ibg img {
 
   .works__title {
     font-size: 24px;
+  }
+
+  .blog {
+    padding-bottom: 30px;
+  }
+
+  .blog__title {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .blog__article-name {
+    font-size: 26px;
+  }
+
+  .blog__item {
+    margin: 0px 0px 25px 0px;
+    padding: 0px 0px 25px 0px;
+  }
+
+  .blog__info {
+    font-size: 16px;
   }
 }

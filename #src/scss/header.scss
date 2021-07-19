@@ -68,6 +68,9 @@
 		transition: color 0.3s ease 0s;
 		position: relative;
 		line-height: 1.2;
+		&._active {
+			color: #FF6464;
+		}
 		@media (min-width: $md3+px) {
 			&:after {
 				display: block;

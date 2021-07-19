@@ -1,7 +1,23 @@
 //====================================================================================================
 
 .works {
+   &__items {
+      padding-bottom: 60px;
+      @media (max-width:$md3+px){
+          padding-bottom: 30px; 
+      }
+   }
    // .works__item
+   padding-bottom: 60px;
+   @media (max-width:$md3+px){
+       padding-bottom: 30px; 
+   }
+   &__main-title {
+      margin: 0px 0px 45px 0px;
+      @media (max-width:$md3+px){
+          margin: 0px 0px 20px 0px; 
+      }
+   }
    &__item {
       border-bottom: 1px solid #E0E0E0;
       padding-bottom: 30px;
@@ -41,8 +57,12 @@
       line-height: 44 / 30 * 100%; //line-height / font-size
       color: inherit;
       margin: 0px 0px 15px 0px;
+      transition: color 0.3s ease 0s;
       @media (max-width:$md3+px){
           font-size: 24px; 
+      }
+      &:hover {
+         color: #ff6464;
       }
    }
    // .works__info
