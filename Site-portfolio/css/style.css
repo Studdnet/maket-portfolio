@@ -571,7 +571,8 @@ textarea.input {
   line-height: 136.36364%;
 }
 
-.text {
+.text,
+.article__text p {
   font-size: 16px;
   line-height: 143.75%;
 }
@@ -1352,6 +1353,63 @@ body.ie ._ibg img {
   color: #8695A4;
 }
 
+.article {
+  max-width: 700px;
+  padding: 0px 10px 30px;
+  margin: 0 auto;
+}
+
+.article__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 147.05882%;
+  margin: 0px 0px 30px 0px;
+}
+
+.article__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 23px 0px;
+}
+
+.article__year {
+  height: 25px;
+  padding: 0px 10px;
+  font-size: 18px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  background: #FF7C7C;
+  border-radius: 16px;
+}
+
+.article__category {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 20px;
+  margin: 0px 0px 0px 25px;
+  line-height: 125%;
+}
+
+.article__text p {
+  margin: 0px 0px 20px 0px;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
 .page {
   padding: 90px 0 0 0;
   -webkit-box-flex: 1;
@@ -1716,5 +1774,13 @@ body.ie ._ibg img {
 
   .blog__info {
     font-size: 16px;
+  }
+
+  .article__title {
+    font-size: 30px;
+  }
+
+  .article__category {
+    font-size: 18px;
   }
 }
